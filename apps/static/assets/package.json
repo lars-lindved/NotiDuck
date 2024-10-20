@@ -1,50 +1,42 @@
 {
-  "name": "soft-ui-dashboard",
-  "version": "1.0.6",
-  "description": "Freebie Dashboard for Bootstrap 5",
-  "main": "pages/dashboard.html",
-  "directories": {
-    "example": "root"
-  },
-  "scripts": {
-    "open-app": "gulp open-app",
-    "start": "npm run open-app",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "gulp-watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/creativetimofficial/soft-ui-dashboard.git"
-  },
-  "keywords": [
-    "soft ui dashboard",
-    "bootstrap 5",
-    "dashboard",
-    "creative tim",
-    "html dashboard",
-    "html css dashboard",
-    "web dashboard",
-    "freebie",
-    "free bootstrap dashboard",
-    "css3 dashboard",
-    "bootstrap dashboard",
-    "frontend",
-    "responsive bootstrap dashboard"
-  ],
-  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/soft-ui-dashboard/issues"
-  },
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-clean": "^0.4.0",
-    "gulp-install": "^1.1.0",
-    "gulp-open": "^3.0.1",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "sass": "^1.49.9"
-  },
-  "homepage": "http://creative-tim.com/product/soft-ui-dashboard"
+    "name": "generic-compilation-script",
+    "version": "1.0.0",
+    "description": "Generic Builder",
+    "main": "gulpfile.js",
+    "author": "AppSeed",
+    "keywords": [
+        "css",
+        "sass",
+        "gulp",
+        "web"
+    ],
+    "homepage": "https://appseed.us",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/app-generator"
+    },
+    "bugs": {
+        "email": "support@appseed.us"
+    },
+    "license": "MIT License",
+    "devDependencies": {
+        "browser-sync": "^2.27.4",
+        "del": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-cssbeautify": "^3.0.0",
+        "node-sass": "^6.0.1",
+        "gulp-file-include": "^2.3.0",
+        "gulp-header": "^2.0.9",
+        "gulp-htmlmin": "^5.0.1",
+        "gulp-npm-dist": "^1.0.3",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^5.0.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-uglify": "^3.0.2",
+        "gulp-wait": "^0.0.2",
+        "merge-stream": "^2.0.0"
+    }
 }

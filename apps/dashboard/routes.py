@@ -11,14 +11,14 @@ from jinja2 import TemplateNotFound
 
 @blueprint.route('/dashboard')
 @login_required
-def index():
+def index_dashboard():
 
     return render_template('dashboard/index.html', segment='index')
 
 
 @blueprint.route('/<template>')
 @login_required
-def route_template(template):
+def route_template_dashboard(template):
 
     try:
 

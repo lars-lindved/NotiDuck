@@ -1,0 +1,283 @@
+{% extends 'layouts/base-presentation.html' %}
+
+{% block title %}NotiDuck - Real-Time Website Monitoring & Alerts{% endblock title %}
+
+{% block meta %}
+<meta name="description" content="NotiDuck is a powerful and user-friendly website monitoring tool that keeps you informed of any changes in online webshops. Get real-time notifications on price drops, product availability, and more.">
+<meta name="keywords" content="NotiDuck, website monitoring, real-time alerts, price tracking, product availability, webshop updates, notifications">
+<meta name="robots" content="index, follow">
+{% endblock meta %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block body_class %} index-page {% endblock body_class %}
+
+{% block content %}
+
+<header class="header-2">
+  <div class="page-header section-height-75" style="background-image: url('/static/assets/img/curved-images/curved.jpg')">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 text-center mx-auto">
+          <h1 class="text-white pt-3 mt-n5">Never Miss an Update with NotiDuck</h1>
+          <p class="lead text-white mt-3">
+            Stay ahead with real-time notifications on price drops, product availability, and more from your favorite webshops.
+          </p>
+          <a href="/register" class="btn btn-success btn-lg mt-4 me-2">Sign Up</a>
+          <a href="/login" class="btn btn-outline-white btn-lg mt-4">Log In</a>
+        </div>
+      </div>
+    </div>
+    <div class="position-absolute w-100 z-index-1 bottom-0">
+      <!-- SVG waves can remain as in your original code -->
+      <!-- ... -->
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="pt-5 pb-6" id="features">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col-lg-8 mx-auto">
+        <h2>Why Choose NotiDuck?</h2>
+        <p class="lead">
+          Powerful, customizable, and user-friendly. NotiDuck keeps you informed of any changes in online webshops, so you never miss out.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Feature 1 -->
+      <div class="col-md-4">
+        <div class="card card-body shadow-sm h-100">
+          <div class="icon icon-shape bg-gradient-primary text-white rounded-circle mb-4">
+            <i class="ni ni-bell-55"></i>
+          </div>
+          <h5>Real-Time Monitoring</h5>
+          <p>
+            Get instant notifications on price drops, stock availability, and more. Stay ahead of the competition and grab the best deals.
+          </p>
+        </div>
+      </div>
+      <!-- Feature 2 -->
+      <div class="col-md-4 mt-md-0 mt-4">
+        <div class="card card-body shadow-sm h-100">
+          <div class="icon icon-shape bg-gradient-success text-white rounded-circle mb-4">
+            <i class="ni ni-settings-gear-65"></i>
+          </div>
+          <h5>Customizable Alerts</h5>
+          <p>
+            Set your preferences for the specific changes you want to monitor. Receive only the notifications that matter to you.
+          </p>
+        </div>
+      </div>
+      <!-- Feature 3 -->
+      <div class="col-md-4 mt-md-0 mt-4">
+        <div class="card card-body shadow-sm h-100">
+          <div class="icon icon-shape bg-gradient-info text-white rounded-circle mb-4">
+            <i class="ni ni-user-run"></i>
+          </div>
+          <h5>User-Friendly Interface</h5>
+          <p>
+            Enjoy a simple sign-up process and an intuitive settings page. NotiDuck is designed to be easy and efficient to use.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How Does This Work Section -->
+<section class="my-5 py-5 bg-light" id="how-it-works">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Image -->
+      <div class="col-lg-6">
+        <img src="/static/assets/img/features/duck-tool.png" class="w-100 rounded shadow" alt="NotiDuck Duck Tool">
+      </div>
+      <!-- Content -->
+      <div class="col-lg-6 mt-lg-0 mt-5">
+        <h2>How Does This Work?</h2>
+        <p class="lead">
+          Introducing our Duck tool from NotiDuck. It visits the website on your schedule, checks for the exact changes you're interested in, and notifies you when something’s different—just like you would do manually, but without the extra effort. Our Duck tool keeps it simple, so you stay informed with minimal hassle.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Story Section -->
+<section class="my-5 py-5" id="our-story">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Content -->
+      <div class="col-lg-6">
+        <h2>Our Story</h2>
+        <p class="lead">
+          As tech enthusiasts, not corporate suits, we take a unique approach we call 'g2a: geeks-to-all.' Our focus is on delivering top-notch technical quality rather than just chasing client fees. By leveraging cutting-edge technologies, our primary costs come from computational resources, not hidden overhead.
+        </p>
+        <p class="lead">
+          This allows us to provide transparent pricing without resorting to tactics that drive unnecessary website checks. We believe clients know their needs best, which is why we offer a pay-as-you-go model, charging only for what you actually use—no sneaky subscriptions or hidden fees. This is also why we don't offer a free tier. Covering the operational costs of free checks would mean charging our paying clients extra, which we believe is simply unfair.
+        </p>
+      </div>
+      <!-- Image -->
+      <div class="col-lg-6 mt-lg-0 mt-5">
+        <img src="/static/assets/img/features/our-story.png" class="w-100 rounded shadow" alt="Our Story">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="my-5 py-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-8 mx-auto">
+        <h2>Ideal for Consumers and Businesses</h2>
+        <p class="lead">
+          Whether you're a savvy shopper looking to save money or a business tracking competitors, NotiDuck has got you covered.
+        </p>
+        <a href="/register" class="btn btn-primary btn-lg mt-3">Get Started Today</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="my-5 py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Image -->
+      <div class="col-lg-6">
+        <img src="/static/assets/img/features/dashboard.png" class="w-100 rounded shadow" alt="NotiDuck Dashboard">
+      </div>
+      <!-- Content -->
+      <div class="col-lg-6 mt-lg-0 mt-5">
+        <h3 class="mb-4">Stay Ahead with NotiDuck</h3>
+        <p class="lead">
+          NotiDuck ensures you're always aware of important updates without having to manually check websites repeatedly.
+        </p>
+        <ul class="list-unstyled">
+          <li class="d-flex align-items-center mb-2">
+            <i class="ni ni-check-bold text-primary me-3"></i>
+            <span>Monitor unlimited webshops</span>
+          </li>
+          <li class="d-flex align-items-center mb-2">
+            <i class="ni ni-check-bold text-primary me-3"></i>
+            <span>Receive instant email notifications</span>
+          </li>
+          <li class="d-flex align-items-center mb-2">
+            <i class="ni ni-check-bold text-primary me-3"></i>
+            <span>Easy to set up and manage</span>
+          </li>
+        </ul>
+        <a href="/register" class="btn btn-success btn-lg mt-3">Start Monitoring Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-7 bg-gradient-dark">
+  <div class="container">
+    <div class="row text-center text-white">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="mb-4">What Our Users Say</h2>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <!-- Testimonial 1 -->
+      <div class="col-lg-4">
+        <div class="card card-body shadow-lg">
+          <div class="author">
+            <h6 class="mb-0">Emily R.</h6>
+            <div class="stats">
+              <i class="far fa-clock"></i> 2 days ago
+            </div>
+          </div>
+          <p class="mt-4">
+            "NotiDuck helped me snag a great deal on a laptop I've been eyeing. The instant notifications are a game-changer!"
+          </p>
+          <div class="rating mt-3">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="col-lg-4 mt-lg-0 mt-5">
+        <div class="card card-body shadow-lg">
+          <div class="author">
+            <h6 class="mb-0">Michael B.</h6>
+            <div class="stats">
+              <i class="far fa-clock"></i> 1 week ago
+            </div>
+          </div>
+          <p class="mt-4">
+            "As a small business owner, keeping track of competitors is crucial. NotiDuck makes it effortless."
+          </p>
+          <div class="rating mt-3">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonial 3 -->
+      <div class="col-lg-4 mt-lg-0 mt-5">
+        <div class="card card-body shadow-lg">
+          <div class="author">
+            <h6 class="mb-0">Sophia L.</h6>
+            <div class="stats">
+              <i class="far fa-clock"></i> 2 weeks ago
+            </div>
+          </div>
+          <p class="mt-4">
+            "I love how easy it is to customize my alerts. NotiDuck keeps me informed about the products I care about."
+          </p>
+          <div class="rating mt-3">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="my-5 py-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-8 mx-auto">
+        <h2>Ready to Get Started?</h2>
+        <p class="lead">
+          Sign up today and take the first step towards effortless website monitoring.
+        </p>
+        <a href="/register" class="btn btn-primary btn-lg mt-3 me-2">Sign Up Now</a>
+        <a href="/login" class="btn btn-outline-primary btn-lg mt-3">Log In</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+{% endblock content %}
+
+<!-- Specific JS goes HERE --> 
+{% block javascripts %}
+
+<!-- Include any specific JavaScript for your landing page here -->
+<!-- For example, if you're using any plugins or libraries -->
+<!-- ... other scripts ... -->
+
+{% endblock javascripts %}
