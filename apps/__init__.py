@@ -9,19 +9,22 @@ from flask import Flask
 from flask_login import LoginManager
 from flask_sqlalchemy import SQLAlchemy
 from importlib import import_module
+from flask_mail import Mail
 
 
 db = SQLAlchemy()
 login_manager = LoginManager()
+mail = Mail()
 
 
 def register_extensions(app):
     db.init_app(app)
     login_manager.init_app(app)
+    mail.init_app(app)
 
 
 def register_blueprints(app):
-    for module_name in ('home', 'authentication', 'dashboard'):
+    for module_name in ('home', 'authentication', 'dashboard', 'email'):
         module = import_module('apps.{}.routes'.format(module_name))
         app.register_blueprint(module.blueprint)
 

@@ -54,6 +54,16 @@ class Config(object):
 
         # This will create a file in <app> FOLDER
         SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'db.sqlite3')
+
+    # Flask-Mail configurations
+    MAIL_SERVER = 'email-smtp.eu-west-1.amazonaws.com'  # Replace with your AWS SMTP server region
+    MAIL_PORT = 587  # or 465 for SSL
+    MAIL_USE_TLS = True  # Use TLS
+    MAIL_USE_SSL = False  # Use SSL if MAIL_PORT is 465
+    MAIL_USERNAME = os.environ.get('MAIL_USERNAME')  # Your AWS WorkMail SMTP username
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')  # Your AWS WorkMail SMTP password
+    MAIL_DEFAULT_SENDER = ('Noti Duck', 'info@notiduck.com')
+    
     
 class ProductionConfig(Config):
     DEBUG = False

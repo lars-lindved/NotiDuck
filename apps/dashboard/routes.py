@@ -12,8 +12,48 @@ from jinja2 import TemplateNotFound
 @blueprint.route('/dashboard')
 @login_required
 def index_dashboard():
+    # Example data; replace with actual queries
+    tokens_left = 1000
+    # Dummy data for notifications
+    notifications = [
+        {
+            'date': '2024-10-21 13:15',
+            'monitor_name': 'example.com',
+            'message': 'Price dropped by 10%',
+            'read': False
+        },
+        {
+            'date': '2024-10-20 17:00',
+            'monitor_name': 'another-site.com',
+            'message': 'Product back in stock',
+            'read': True
+        },
 
-    return render_template('dashboard/index.html', segment='index')
+    ]
+    total_notifications = len(notifications)
+
+    # Dummy data for active monitors
+    monitors = [
+        {
+            'website': 'example.com',
+            'check_frequency': 'Hourly'
+        },
+        {
+            'website': 'another-site.com',
+            'check_frequency': 'Daily'
+        }
+    ]
+    total_monitors = len(monitors)
+
+
+    return render_template(
+        'dashboard/index.html',
+        segment='index',
+        total_notifications=total_notifications,
+        tokens_left=tokens_left,
+        notifications=notifications,
+        monitors=monitors,
+    )
 
 
 @blueprint.route('/<template>')
@@ -28,7 +68,7 @@ def route_template_dashboard(template):
         # Detect the current page
         segment = get_segment(request)
 
-        # Serve the file (if exists) from app/templates/home/FILE.html
+        # Serve the file (if exists) from app/templates/dashboard/FILE.html
         return render_template("dashboard/" + template, segment=segment)
 
     except TemplateNotFound:
