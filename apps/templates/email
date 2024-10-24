@@ -1,5 +1,0 @@
-  /ssh:ubuntu@16.171.154.49:/home/ubuntu/5e1ddab0-86ad-4f7d-ad50-8812333b310e/apps/email/templates:
-  total used in directory 12 available 16.3 GiB
-  drwxrwxr-x 3 ubuntu ubuntu 4096 Oct 20 22:13 .
-  drwxrwxr-x 3 ubuntu ubuntu 4096 Oct 20 22:36 ..
-  drwxrwxr-x 2 ubuntu ubuntu 4096 Oct 20 22:14 email

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+cd ..
+
+sudo docker stop develop-container
+
+docker container rm  develop-container
+
+sudo docker build -t flask-app-image .
+
+docker run -d --name develop-container \
+    -p 8001:8000 \
+    -v /home/ubuntu/persistent_data:/app/instance \
+    flask-app-image
+
+cd -
+

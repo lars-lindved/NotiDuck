@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Confirm Your Subscription</title>
+</head>
+<body>
+    <p>Hello {{ current_user.username }},</p>
+    <p>Thank you for subscribing to the NotiDuck newsletter!</p>
+    <p>Please confirm your subscription by clicking the link below:</p>
+    <p><a href="{{ confirm_url }}">Confirm Subscription</a></p>
+    <p>If you did not request this, please ignore this email.</p>
+    <p>Best regards,<br>The NotiDuck Team</p>
+</body>
+</html>

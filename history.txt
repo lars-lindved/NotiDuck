@@ -1,0 +1,562 @@
+    1  ls
+    2  sudo apt update
+    3  pip install conda
+    4  sudo apt install python3-pip
+    5  pip install conda
+    6  mkdir -p ~/miniconda3
+    7  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+    8  bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+    9  rm ~/miniconda3/miniconda.sh
+   10  conda
+   11  source ./bashrc
+   12  source .bashrc
+   13  conda
+   14  source miniconda3/bin/activate
+   15  conda init --all
+   16  source .bashrc
+   17  ls
+   18  ssh-keygen -t ed25519 -C "your_email@example.com"
+   19  ssh-keygen -t ed25519 -C "contact@larslindved.com"
+   20  cat ~/.ssh/id_ed25519.pub
+   21  ssh -T git@github.com
+   22  git clone git@github.com:lars-lindved/NotiDuck.git
+   23  cd NotiDuck/
+   24  ls
+   25  ll
+   26  ls
+   27  ll
+   28  git clone git@github.com:lars-lindved/5e1ddab0-86ad-4f7d-ad50-8812333b310e.git
+   29  sudo apt update
+   30  sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+   31  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   32  lsb_release -a'
+   33  lsb_release -a
+   34  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu noble stable"
+   35  sudo systemctl status docker
+   36  sudo apt update
+   37  sudo apt install -y docker-ce
+   38  sudo systemctl status docker
+   39  echo ${USER}
+   40  sudo usermod -aG docker ${USER}
+   41  htop
+   42  cd 5e1ddab0-86ad-4f7d-ad50-8812333b310e/
+   43  ll
+   44  ls Dockerfile 
+   45  sudo docker build -t docker-flask-app-image
+   46  sudo docker build -t docker-flask-app-image .
+   47  git grep app.run(host=
+   48  git grep app.run
+   49  git grep host
+   50  git grep host=
+   51  git grep "host="
+   52  git grep "app.run"
+   53  nano run.py 
+   54  nano Dockerfile 
+   55  ll
+   56  code gunicorn-cfg.py 
+   57  sudo snap install code
+   58  nano gunicorn-cfg.py 
+   59  emacs run.py 
+   60  nano run.py 
+   61  sudo docker build -t your-flask-app-image .
+   62  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+   63  sudo docker ps
+   64  curl http://localhost:8000
+   65  nano run.py 
+   66  sudo docker build -t your-flask-app-image .
+   67  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+   68  docker images
+   69  docker image rm your-flask-app-image:latest 
+   70  sudo docker build -t your-flask-app-image .
+   71  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+   72  dockercontainer rm your-flask-app-container
+   73  docker container rm your-flask-app-container
+   74  docker container rm -f your-flask-app-container
+   75  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+   76  curl http://localhost:8000
+   77  nano gunicorn-cfg.py
+   78  sudo docker build -t your-flask-app-image .
+   79  docker container rm -f your-flask-app-container
+   80  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+   81  sudo docker ps
+   82  sudo docker logs your-flask-app-container
+   83  docker
+   84  docker images
+   85  sudo docker ps
+   86  sudo apt install -y nginx
+   87  sudo nano /etc/nginx/sites-available/larslindved.com
+   88  sudo ln -s /etc/nginx/sites-available/larslindved.com /etc/nginx/sites-enabled/
+   89  sudo nginx -t
+   90  sudo systemctl restart nginx
+   91  sudo ufw allow 'Nginx Full'
+   92  sudo docker build -t your-flask-app-image .
+   93  cd 5e1ddab0-86ad-4f7d-ad50-8812333b310e/
+   94  sudo docker build -t your-flask-app-image .
+   95  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+   96  docker container rm -f your-flask-app-container
+   97  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+   98  sudo apt install -y certbot python3-certbot-nginx
+   99  sudo certbot --nginx -d larslindved.com -d www.larslindved.com
+  100  sudo certbot renew --dry-run
+  101  ll
+  102  cd apps
+  103  ll
+  104  cd authentication/
+  105  ll
+  106  cd ..
+  107  ll
+  108  ls home/
+  109  cat home/routes.py 
+  110  cd ..
+  111  tree
+  112  sudo apt install tree
+  113  tree
+  114  sudo certbot renew --dry-run
+  115  │   ├── home
+  116  sudo systemctl status nginx
+  117  sudo docker logs your-flask-app-container
+  118  sudo apt update && sudo apt upgrade -y
+  119  sudo ufw allow OpenSSH
+  120  sudo ufw allow 'Nginx Full'
+  121  sudo ufw enable
+  122  ll
+  123  cd 5e1ddab0-86ad-4f7d-ad50-8812333b310e/
+  124  ll
+  125  cd 5e1ddab0-86ad-4f7d-ad50-8812333b310e/
+  126  git status
+  127  git add .
+  128  git commit -m "working boilerplate"
+  129  git push origin main
+  130  cd app
+  131  ll
+  132  cd apps/
+  133  tree
+  134  tree -d
+  135  clear
+  136  tree -d
+  137  cp -r home/ _bkp_home
+  138  ls home/
+  139  cat home/*
+  140  cd
+  141  ll
+  142  rm -rf NotiDuck/
+  143  cd 5e1ddab0-86ad-4f7d-ad50-8812333b310e/
+  144  git remote set-url origin git remote set-url origin
+  145  git remote set-url origin git@github.com:lars-lindved/NotiDuck.git
+  146  git status
+  147  git push origin main
+  148  sudo docker logs your-flask-app-container
+  149  docker container rm -f your-flask-app-container
+  150  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  151  docker container rm -f your-flask-app-container
+  152  sudo docker build -t your-flask-app-image .
+  153  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  154  tree
+  155  tree -d
+  156  cp -r apps/home apps/home_backup
+  157  mv apps/home apps/dashboard
+  158  grep -rl "from apps.home" . | xargs sed -i 's/from apps.home/from apps.dashboard/g'
+  159  nano apps/dashboard/__init__.py 
+  160  nano apps/dashboard/routes.py
+  161  mv apps/templates/home apps/templates/dashboard
+  162  ll apps/static/
+  163  ll apps/static/assets/
+  164  ll apps/static/assets/css/
+  165  cd apps/templates/
+  166  ls
+  167  git grep home
+  168  nano includes/navigation.html
+  169  cd ..
+  170  ls
+  171  cd ..
+  172  ls
+  173  nano run.py 
+  174  ls
+  175  cd apps/
+  176  nano __init__.py 
+  177  docker container rm -f your-flask-app-container
+  178  sudo docker build -t your-flask-app-image .
+  179  cd ..
+  180  sudo docker build -t your-flask-app-image .
+  181  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  182  git grep home_blueprint
+  183  nano apps/authentication/routes.py
+  184  docker container rm -f your-flask-app-container
+  185  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  186  docker container rm -f your-flask-app-container
+  187  sudo docker build -t your-flask-app-image .
+  188  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  189  docker images
+  190  docker rmi d09edc64dfcb
+  191  docker rmi 01297a655c84 06f789bf3866
+  192  docker images
+  193  docker rmi 6dc390b9ca61 0574ceb0c6c4
+  194  sudo docker build -t your-flask-app-image .
+  195  docker images
+  196  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  197  docker container rm -f your-flask-app-container
+  198  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  199  git status
+  200  git -b working
+  201  git checkout -b working
+  202  git add .
+  203  git commit -m "working backup"
+  204  git push origin working
+  205  git checkout main
+  206  git pull origin working 
+  207  git status
+  208  git push
+  209  git push -f origin main
+  210  ls apps/templates/
+  211  cd ..
+  212  ls
+  213  cd flask-soft-ui-design/apps/templates/
+  214  ll
+  215  cp -r home ~/5e1ddab0-86ad-4f7d-ad50-8812333b310e/apps/templates/
+  216  ls ~/5e1ddab0-86ad-4f7d-ad50-8812333b310e/apps/templates/
+  217  cd ..
+  218  cd static/
+  219  cd assets/
+  220  ls
+  221  cp -r * ~/5e1ddab0-86ad-4f7d-ad50-8812333b310e/apps/static/assets/
+  222  cd ~/5e1ddab0-86ad-4f7d-ad50-8812333b310e/apps/
+  223  ll
+  224  cd _bkp_home/
+  225  ll
+  226  cd ..
+  227  mv _bkp_home home
+  228  nano home/routes.py 
+  229  nano __init__.py 
+  230  ll
+  231  cd templates/home/
+  232  ls
+  233  nano index.html 
+  234  emacs index.html 
+  235  sudo snap install emacs
+  236  sudo snap install emacs --classic
+  237  emacs index.html 
+  238  ll
+  239  cd ..
+  240  docker container rm -f your-flask-app-container
+  241  sudo docker build -t your-flask-app-image .
+  242  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  243  ll
+  244  cd apps/
+  245  ll
+  246  cd authentication/
+  247  ll
+  248  emacs routes.py 
+  249  cd 5e1ddab0-86ad-4f7d-ad50-8812333b310e/apps/authentication/
+  250  ll
+  251  text routes.py 
+  252  sudo apt install ne
+  253  ne routes.py 
+  254  cd ..
+  255  git clone git@github.com:lars-lindved/flask-soft-ui-design.git
+  256  cd flask-soft-ui-design/
+  257  ll
+  258  cd apps/
+  259  ll
+  260  tree
+  261  tree -d
+  262  clear
+  263  tree -d
+  264  ls home
+  265  cd 5e1ddab0-86ad-4f7d-ad50-8812333b310e/
+  266  docker container rm -f your-flask-app-container
+  267  sudo docker build -t your-flask-app-image .
+  268  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  269  sudo docker logs your-flask-app-container
+  270  ne apps/__init__.py 
+  271  ll
+  272  cd apps/
+  273  ll
+  274  git grep index
+  275  ll
+  276  git grep "def index"
+  277  rm -rf home_backup/
+  278  nano home/routes.py 
+  279  cd ..
+  280  docker container rm -f your-flask-app-container
+  281  sudo docker build -t your-flask-app-image .
+  282  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  283  sudo docker logs your-flask-app-container
+  284  nano apps/dashboard/routes.py 
+  285  docker container rm -f your-flask-app-container
+  286  sudo docker build -t your-flask-app-image .
+  287  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  288  sudo docker logs your-flask-app-container
+  289  nano apps/dashboard/routes.py 
+  290  docker container rm -f your-flask-app-container
+  291  sudo docker build -t your-flask-app-image .
+  292  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  293  sudo docker logs your-flask-app-container
+  294  nano apps/__init__.py 
+  295  nano apps/home/__init__.py 
+  296  nano apps/dashboard/__init__.py 
+  297  ls
+  298  emacs apps/__init__.py 
+  299  cat apps/__init__.py 
+  300  cat apps/home/__init__.py 
+  301  ls apps/templates/layouts/
+  302  cp ~/flask-soft-ui-design/apps/templates/layouts/base-presentation.html apps/templates/layouts/
+  303  docker container rm -f your-flask-app-container
+  304  sudo docker build -t your-flask-app-image .
+  305  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  306  git status
+  307  git add .
+  308  git commit -m "first landing page, login and dashboard"
+  309  git push -f origin main
+  310  git grep LOGOUT
+  311  hitstory
+  312  history
+  313  git grep LOGOUT
+  314  nano apps/templates/includes/navigation-rtl.html
+  315  ne apps/templates/includes/navigation-rtl.html
+  316  git grep LOGOUT
+  317  ne apps/templates/includes/navigation.html
+  318  ne apps/templates/includes/navigation-rtl.html
+  319  ne apps/authentication/__init__.py 
+  320  ne apps/authentication/routes.py 
+  321  docker container rm -f your-flask-app-container
+  322  sudo docker build -t your-flask-app-image .
+  323  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  324  ll 5e1ddab0-86ad-4f7d-ad50-8812333b310e/apps/templates/layouts/
+  325  sudo docker logs your-flask-app-container
+  326  cd 5e1ddab0-86ad-4f7d-ad50-8812333b310e/
+  327  git grep "navigation-light.html"
+  328  find -f "navigation-light.html"
+  329  find -name "navigation-light.html"
+  330  cd ../flask-soft-ui-design/
+  331  find -name "navigation-light.html"
+  332  cp apps/templates/includes/navigation-light.html ~/5e1ddab0-86ad-4f7d-ad50-8812333b310e/apps/templates/includes/
+  333  cd -
+  334  find -name "navigation-light.html"
+  335  docker container rm -f your-flask-app-container
+  336  sudo docker build -t your-flask-app-image .
+  337  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  338  cd 5e1ddab0-86ad-4f7d-ad50-8812333b310e/
+  339  docker container rm -f your-flask-app-container
+  340  sudo docker build -t your-flask-app-image .
+  341  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  342  sudo docker logs your-flask-app-container
+  343  git grep dashboard_blueprint.index
+  344  ne apps/authentication/routes.py
+  345  docker container rm -f your-flask-app-container
+  346  sudo docker build -t your-flask-app-image .
+  347  sudo docker run -d --name your-flask-app-container -p 8000:8000 your-flask-app-image
+  348  ll
+  349  cd apps/
+  350  ll
+  351  cat __init__.py 
+  352  ll
+  353  ll dashboard/
+  354  cat dashboard/routes.py 
+  355  cat dashboard/__init__.py 
+  356  cat apps/authentication/routes.py
+  357  cat authentication/routes.py
+  358  pwd
+  359  exec env TERM='dumb' INSIDE_EMACS='27.1,tramp:2.4.3.27.1' ENV='' HISTFILE=~/.tramp_history PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+  360  cd 5e1ddab0-86ad-4f7d-ad50-8812333b310e/
+  361  ls
+  362  cd apps/
+  363  ls
+  364  cat config.py 
+  365  cat __init__.py 
+  366  cat home/routes.py 
+  367  cat dashboard/routes.py 
+  368  ne dashboard/routes.py 
+  369  ne apps/authentication/routes.py
+  370  ne authentication/routes.py
+  371  cd ..
+  372  ls
+  373  cat run.py 
+  374  mkdir scripts
+  375  cd scripts/
+  376  touch docker_host.sh
+  377  ne docker_host.sh
+  378  bash docker_host.sh 
+  379  ll
+  380  cd ..
+  381  pip install Flask-Mail
+  382  ls
+  383  ll
+  384  cd apps/
+  385  ls
+  386  mkdir email
+  387  cd email/
+  388  touch __init__.py
+  389  cd 5e1ddab0-86ad-4f7d-ad50-8812333b310e/scripts/
+  390  bash docker_host.sh 
+  391  sudo docker logs your-flask-app-container
+  392  pip install flask-mail
+  393  pip show flask-mail
+  394  pkill gunicorn  # This stops Gunicorn
+  395  gunicorn --workers 3 --bind 0.0.0.0:8000 wsgi:app
+  396  cd ..
+  397  ls
+  398  nano requirements.txt 
+  399  pip freeze
+  400  nano requirements.txt 
+  401  cd scripts/
+  402  bash docker_host.sh 
+  403  sudo docker logs your-flask-app-container
+  404  bash docker_host.sh 
+  405  sudo docker logs your-flask-app-container
+  406  bash docker_host.sh 
+  407  sudo docker logs your-flask-app-container
+  408  cd ..
+  409  git grep "import db"
+  410  cd scripts/
+  411  bash docker_host.sh 
+  412  sudo docker logs your-flask-app-container
+  413  cd ..
+  414  git grep "= Blueprint("
+  415  cd scripts/
+  416  bash docker_host.sh 
+  417  sudo docker logs your-flask-app-container
+  418  cd ..
+  419  git grep "current_app"
+  420  git grep "current"
+  421  git grep "currentapp"
+  422  git grep "current app"
+  423  git grep "current"
+  424  git grep "current_app"
+  425  cd scripts/
+  426  sudo docker logs your-flask-app-container
+  427  bash docker_host.sh 
+  428  sudo docker logs your-flask-app-container
+  429  bash docker_host.sh 
+  430  sudo docker logs your-flask-app-container
+  431  bash docker_host.sh 
+  432  sudo docker logs your-flask-app-container
+  433  bash docker_host.sh 
+  434  sudo docker logs your-flask-app-container
+  435  bash docker_host.sh 
+  436  sudo docker logs your-flask-app-container
+  437  cd ..
+  438  git grep "email_bp"
+  439  cd -
+  440  bash docker_host.sh 
+  441  sudo docker logs your-flask-app-container
+  442  bash docker_host.sh 
+  443  sudo docker logs your-flask-app-container
+  444  cd ..
+  445  git grep "email_db"
+  446  bash docker_host.sh 
+  447  cd scripts/
+  448  bash docker_host.sh 
+  449  sudo docker logs your-flask-app-container
+  450  history
+  451  sudo docker logs your-flask-app-container
+  452  bash docker_host.sh 
+  453  sudo docker logs your-flask-app-container
+  454  bash docker_host.sh 
+  455  tail -f sudo docker logs your-flask-app-container
+  456  sudo docker logs your-flask-app-container
+  457  bash docker_host.sh 
+  458  sudo docker logs your-flask-app-container
+  459  bash docker_host.sh 
+  460  sudo docker logs your-flask-app-container
+  461  bash docker_host.sh 
+  462  sudo docker logs your-flask-app-container
+  463  exec env TERM='dumb' INSIDE_EMACS='27.1,tramp:2.4.3.27.1' ENV='' HISTFILE=~/.tramp_history PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+  464  cd 5e1ddab0-86ad-4f7d-ad50-8812333b310e/
+  465  cd scripts/
+  466  ll
+  467  bash docker_host.sh 
+  468  exec env TERM='dumb' INSIDE_EMACS='27.1,tramp:2.4.3.27.1' ENV='' HISTFILE=~/.tramp_history PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh 
+  469  cd 5e1ddab0-86ad-4f7d-ad50-8812333b310e/
+  470  flask --app flaskr init-db
+  471  flask --app flaskr run --debug
+  472  . .venv/bin/activate
+  473  python3 -m venv .venv
+  474  . .venv/bin/activate
+  475  flask --app flaskr run --debug
+  476  flask run
+  477  cd apps/
+  478  flask run
+  479  cd ..
+  480  export FLASK_APP=run.py
+  481  export FLASK_ENV=development
+  482  flask run
+  483  pip install -r requirements.txt
+  484  flask run
+  485  cd scripts/
+  486  ll
+  487  bash docker_host.sh 
+  488  sudo docker logs your-flask-app-container
+  489  bash docker_host.sh 
+  490  sudo docker logs your-flask-app-container
+  491  bash docker_host.sh 
+  492  sudo docker logs your-flask-app-container
+  493  bash docker_host.sh 
+  494  sudo docker logs your-flask-app-container
+  495  bash docker_host.sh 
+  496  sudo docker logs your-flask-app-container
+  497  bash docker_host.sh 
+  498  sudo docker logs your-flask-app-container
+  499  bash docker_host.sh 
+  500  sudo docker logs your-flask-app-container
+  501  cd ..
+  502  git grep 'email.subscribe'
+  503  cd -
+  504  bash docker_host.sh 
+  505  sudo docker logs your-flask-app-container
+  506  bash docker_host.sh 
+  507  cd ..
+  508  ls
+  509  cd apps/email/
+  510  ls
+  511  rm -rf templates/
+  512  cd..
+  513  cd ..
+  514  cd ../scripts/
+  515  bash docker_host.sh 
+  516  sudo docker logs your-flask-app-container
+  517  bash docker_host.sh 
+  518  sudo docker logs your-flask-app-container
+  519  bash docker_host.sh 
+  520  sudo docker logs your-flask-app-container
+  521  bash docker_host.sh 
+  522  sudo docker logs your-flask-app-container
+  523  bash docker_host.sh 
+  524  sudo docker logs your-flask-app-container
+  525  bash docker_host.sh 
+  526  cd ..
+  527  ls
+  528  ll
+  529  cat models.py
+  530  cd apps/
+  531  ls
+  532  ll
+  533  cd authentication/
+  534  ll
+  535  cat models.py 
+  536  cd ..
+  537  git status
+  538  git add .
+  539  git commit
+  540  git push -f origin main
+  541  git checkout -b new-database
+  542  pip install flask-sqlalchemy pymysql
+  543  docker-compose up --build
+  544  sudo apt  install docker-compose
+  545  docker-compose up --build
+  546  sudo apt  install docker-compose
+  547  sudo chown -R $USER:$USER mysql_data
+  548  sudo systemctl restart docker
+  549  docker-compose up --build
+  550  sudo ocker-compose up --build
+  551  sudo docker-compose up --build
+  552  docker container rm -f your-flask-app-container
+  553  docker volume prune
+  554  docker-compose down
+  555  docker rm $(docker ps -a -q)
+  556  docker-compose down --volumes
+  557  docker-compose up --build
+  558  cd 5e1ddab0-86ad-4f7d-ad50-8812333b310e/
+  559  docker-compose down
+  560  docker volume prune
+  561  docker-compose up --build -d
+  562  history > history.txt
